@@ -1,0 +1,19 @@
+<template name="Login">
+  <div class='login'>
+    <div class="container box">
+      <h2>Login</h2>
+      <form class='form-horizontal' id="login-form">
+        <div class='form-group'>
+          <input type='email' id='login-email' placeholder='Email' class='form-control' name='emailAddress' required />
+        </div>
+        <div class='form-group'>
+          <input type='password' id='login-password' placeholder='Password' class='form-control' name='password' required />
+        </div>
+        <div class='form-group'>
+          <button type='submit' class='btn btn-default'>Login</button>
+        </div>
+        <p>{{#linkTo route="Registration"}}Register{{/linkTo}}</p>
+      </form>
+    </div>
+  </div>
+</template>
